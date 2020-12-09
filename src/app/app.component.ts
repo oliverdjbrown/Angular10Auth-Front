@@ -1,3 +1,4 @@
+import { AuthService } from './core/services/auth/auth.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularAuthFront';
+
+  constructor(public authService: AuthService){}
+
 }
